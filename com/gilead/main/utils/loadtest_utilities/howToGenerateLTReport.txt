@@ -1,0 +1,18 @@
+This document is just a quick procedure to show others on how to generate LoadTesting Report.
+Currently, the report template supports 5 apps and 5 loops each.
+
+Steps:
+1. Set the LOOPING value in definition.py to number of loops <=5.
+2. Run test W10DA_153.
+3. Get DetailTestLog.txt from ..\com\gilead\test\logs to local working directory.
+4. Run pre-processing executing initial parsing:
+	python parseDetailedReport.py which will produce LOADTEST.txt
+5. Use LOADTEST.txt as input to generateLoadTestReportFromTemplate.py.
+   This script will parse the LOADTEST.txt and update a jinga2 template, and output 
+   it to Load-Testing_Summary_Report.html.
+ie: python generateLoadTestReportFromTemplate.py
+
+6. Then open up the file: Load-Testing_Summary_Report.html using a browser to view the report.
+
+NOTE: Its best to execute all these steps in Command Line Terminal.
+End results can be viewed in browser.

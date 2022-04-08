@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         table, th, td {
+            border: 1px solid black;
+         }
+      </style>
+   </head>
+   <body style="background-color:#FAF0E6;">
+      <h1>Load Testing Results</h1>
+
+<b><u>ENVIRONMENT INFORMATION:</u></b>
+      <table>
+         <tr>
+            <th>Software</th>
+            <th>Information</th>
+         </tr>
+         <tr>
+            <td>WinBuildVer</td>
+            <td>{{ winBuildVer }}</td>
+         </tr>
+         <tr>
+            <td>Python</td>
+            <td>{{ pyVer }}</td>
+         </tr>
+          <tr>
+            <td>Date</td>
+            <td>{{ date }}</td>
+         </tr>
+      </table>
+      <br><br>
+<b><u>Start Memory, CPU and Time Counter:</u></b>
+       <table>
+         <tr>
+            <th>Resources</th>
+            <th>Available Before Test</th>
+         </tr>
+         <tr>
+            <td>Start Available Physical Memory (MB)</td>
+            <td>{{mem_start}}</td>
+         </tr>
+         <tr>
+            <td>Start CPU %</td>
+            <td>{{cpu_start}}</td>
+         </tr>
+          <tr>
+            <td>Start Time Counter (in Sec)</td>
+            <td>{{time_start}}</td>
+         </tr>
+      </table>
+      <br>
+<b><u>APP-1: Loading up 500KB TXT File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">{{app_one}}</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+            <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+            <td>{{mem_app1_loop1}}</td>
+            <td>{{mem_app1_loop2}}</td>
+            <td>{{mem_app1_loop3}}</td>
+            <td>{{mem_app1_loop4}}</td>
+            <td>{{mem_app1_loop5}}</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>{{cpu_app1_loop1}}</td>
+            <td>{{cpu_app1_loop2}}</td>
+            <td>{{cpu_app1_loop3}}</td>
+            <td>{{cpu_app1_loop4}}</td>
+            <td>{{cpu_app1_loop5}}</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>{{et_app1_loop1}}</td>
+            <td>{{et_app1_loop2}}</td>
+            <td>{{et_app1_loop3}}</td>
+            <td>{{et_app1_loop4}}</td>
+            <td>{{et_app1_loop5}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-2: Loading up 10MB PDF File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">{{app_two}}</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>{{mem_app2_loop1}}</td>
+            <td>{{mem_app2_loop2}}</td>
+            <td>{{mem_app2_loop3}}</td>
+            <td>{{mem_app2_loop4}}</td>
+            <td>{{mem_app2_loop5}}</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>{{cpu_app2_loop1}}</td>
+            <td>{{cpu_app2_loop2}}</td>
+            <td>{{cpu_app2_loop3}}</td>
+            <td>{{cpu_app2_loop4}}</td>
+            <td>{{cpu_app2_loop5}}</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>{{et_app2_loop1}}</td>
+            <td>{{et_app2_loop2}}</td>
+            <td>{{et_app2_loop3}}</td>
+            <td>{{et_app2_loop4}}</td>
+            <td>{{et_app2_loop5}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-3: Launch New Instance of Outlook.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">{{app_three}}</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>{{mem_app3_loop1}}</td>
+            <td>{{mem_app3_loop2}}</td>
+            <td>{{mem_app3_loop3}}</td>
+            <td>{{mem_app3_loop4}}</td>
+            <td>{{mem_app3_loop5}}</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>{{cpu_app3_loop1}}</td>
+            <td>{{cpu_app3_loop2}}</td>
+            <td>{{cpu_app3_loop3}}</td>
+            <td>{{cpu_app3_loop4}}</td>
+            <td>{{cpu_app3_loop5}}</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>{{et_app3_loop1}}</td>
+            <td>{{et_app3_loop2}}</td>
+            <td>{{et_app3_loop3}}</td>
+            <td>{{et_app3_loop4}}</td>
+            <td>{{et_app3_loop5}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-4: Loading up 6MB XLSX File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">{{app_four}}</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>{{mem_app4_loop1}}</td>
+            <td>{{mem_app4_loop2}}</td>
+            <td>{{mem_app4_loop3}}</td>
+            <td>{{mem_app4_loop4}}</td>
+            <td>{{mem_app4_loop5}}</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>{{cpu_app4_loop1}}</td>
+            <td>{{cpu_app4_loop2}}</td>
+            <td>{{cpu_app4_loop3}}</td>
+            <td>{{cpu_app4_loop4}}</td>
+            <td>{{cpu_app4_loop5}}</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>{{et_app4_loop1}}</td>
+            <td>{{et_app4_loop2}}</td>
+            <td>{{et_app4_loop3}}</td>
+            <td>{{et_app4_loop4}}</td>
+            <td>{{et_app4_loop5}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-5: Loading up 2MB DOCX File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">{{app_five}}</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>{{mem_app5_loop1}}</td>
+            <td>{{mem_app5_loop2}}</td>
+            <td>{{mem_app5_loop3}}</td>
+            <td>{{mem_app5_loop4}}</td>
+            <td>{{mem_app5_loop5}}</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>{{cpu_app5_loop1}}</td>
+            <td>{{cpu_app5_loop2}}</td>
+            <td>{{cpu_app5_loop3}}</td>
+            <td>{{cpu_app5_loop4}}</td>
+            <td>{{cpu_app5_loop5}}</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>{{et_app5_loop1}}</td>
+            <td>{{et_app5_loop2}}</td>
+            <td>{{et_app5_loop3}}</td>
+            <td>{{et_app5_loop4}}</td>
+            <td>{{et_app5_loop5}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>SUMMARY OF LOADTESTING RESULTS:</u></b>
+       <table>
+         <tr>
+            <th>Resources</th>
+            <th>Utilization Amount</th>
+         </tr>
+         <tr>
+            <td>Mem Usage Overall (MB)</td>
+            <td>{{overall_mem_usage}}</td>
+         </tr>
+         <tr>
+            <td>CPU Usage Overall (%)</td>
+            <td>{{overall_cpu_usage}}</td>
+         </tr>
+          <tr>
+            <td>Time Usage Overall (in Minutes)</td>
+            <td>{{overall_time_lapsed}}</td>
+         </tr>
+      </table>
+   </body>
+</html>

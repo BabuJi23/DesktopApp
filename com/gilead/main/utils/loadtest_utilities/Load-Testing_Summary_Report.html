@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         table, th, td {
+            border: 1px solid black;
+         }
+      </style>
+   </head>
+   <body style="background-color:#FAF0E6;">
+      <h1>Load Testing Results</h1>
+
+<b><u>ENVIRONMENT INFORMATION:</u></b>
+      <table>
+         <tr>
+            <th>Software</th>
+            <th>Information</th>
+         </tr>
+         <tr>
+            <td>WinBuildVer</td>
+            <td>b'Microsoft Windows 10 Enterprise'b'10.0.17763 N/A Build 17763'</td>
+         </tr>
+         <tr>
+            <td>Python</td>
+            <td>b'Python 3.7.3'</td>
+         </tr>
+          <tr>
+            <td>Date</td>
+            <td>03/19/2020</td>
+         </tr>
+      </table>
+      <br><br>
+<b><u>Start Memory, CPU and Time Counter:</u></b>
+       <table>
+         <tr>
+            <th>Resources</th>
+            <th>Available Before Test</th>
+         </tr>
+         <tr>
+            <td>Start Available Physical Memory (MB)</td>
+            <td>8617.1640625</td>
+         </tr>
+         <tr>
+            <td>Start CPU %</td>
+            <td>46.4</td>
+         </tr>
+          <tr>
+            <td>Start Time Counter (in Sec)</td>
+            <td>11.8750505</td>
+         </tr>
+      </table>
+      <br>
+<b><u>APP-1: Loading up 500KB TXT File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">Notepad</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+            <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+            <td>8596.36328125</td>
+            <td>8108.25390625</td>
+            <td>8078.78515625</td>
+            <td>8160.546875</td>
+            <td>8043.62109375</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>-6.0</td>
+            <td>0.0</td>
+            <td>6.0</td>
+            <td>48.4</td>
+            <td>6.399999999999999</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>7.2368017999999985</td>
+            <td>7.222995900000001</td>
+            <td>7.288011999999981</td>
+            <td>7.18001049999998</td>
+            <td>7.1695146000000705</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-2: Loading up 10MB PDF File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">Acrobat Reader</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>8196.37109375</td>
+            <td>8115.453125</td>
+            <td>8024.2890625</td>
+            <td>8075.9296875</td>
+            <td>8032.3125</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>63.6</td>
+            <td>27.6</td>
+            <td>1.6000000000000014</td>
+            <td>83.19999999999999</td>
+            <td>31.6</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>48.826357699999996</td>
+            <td>42.1335148</td>
+            <td>43.78905000000003</td>
+            <td>44.73180919999999</td>
+            <td>45.72433890000002</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-3: Launch New Instance of Outlook.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">Outlook</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>8153.90625</td>
+            <td>8105.61328125</td>
+            <td>8004.734375</td>
+            <td>8030.91796875</td>
+            <td>7980.90234375</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>8.0</td>
+            <td>37.6</td>
+            <td>8.0</td>
+            <td>82.79999999999998</td>
+            <td>11.200000000000003</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>35.061753800000005</td>
+            <td>37.225589299999996</td>
+            <td>35.082017500000006</td>
+            <td>35.35911109999995</td>
+            <td>35.2078755</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-4: Loading up 6MB XLSX File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">Excel</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>8069.3046875</td>
+            <td>8104.9375</td>
+            <td>8023.20703125</td>
+            <td>8048.4609375</td>
+            <td>7971.88671875</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>-1.6000000000000014</td>
+            <td>192.79999999999998</td>
+            <td>-4.399999999999999</td>
+            <td>-9.199999999999996</td>
+            <td>-4.399999999999999</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>27.684450299999995</td>
+            <td>30.347403999999983</td>
+            <td>30.334786500000007</td>
+            <td>31.946805999999924</td>
+            <td>31.79998790000002</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>APP-5: Loading up 2MB DOCX File.</u></b>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th align="center">Word</th>
+            <th align="center">Loop 1 </th>
+            <th align="center">Loop 2</th>
+            <th align="center">Loop 3</th>
+             <th align="center">Loop 4</th>
+            <th align="center">Loop 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mem Available (MB)</td>
+             <td>8117.75</td>
+            <td>8083.328125</td>
+            <td>8004.14453125</td>
+            <td>8056.203125</td>
+            <td>7973.3203125</td>
+          </tr>
+          <tr>
+            <td>CPU Usage (%)</td>
+            <td>3.6000000000000014</td>
+            <td>12.399999999999999</td>
+            <td>108.4</td>
+            <td>-4.399999999999999</td>
+            <td>24.800000000000004</td>
+          </tr>
+          <tr>
+            <td>Elapsed_Time (s)</td>
+            <td>26.74797609999999</td>
+            <td>27.271138800000017</td>
+            <td>29.534068400000024</td>
+            <td>28.942045099999973</td>
+            <td>29.836720100000093</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+<b><u>SUMMARY OF LOADTESTING RESULTS:</u></b>
+       <table>
+         <tr>
+            <th>Resources</th>
+            <th>Utilization Amount</th>
+         </tr>
+         <tr>
+            <td>Mem Usage Overall (MB)</td>
+            <td>643.8046875</td>
+         </tr>
+         <tr>
+            <td>CPU Usage Overall (%, +up, -down)</td>
+            <td>24.800000000000004</td>
+         </tr>
+          <tr>
+            <td>Time Usage Overall (in Minutes)</td>
+            <td>12.232539026666666</td>
+         </tr>
+      </table>
+   </body>
+</html>
